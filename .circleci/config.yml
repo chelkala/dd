@@ -1,6 +1,5 @@
 version: 2
-
- jobs:
+jobs:
    build:
      #...
    deploy:
@@ -12,7 +11,7 @@ version: 2
            command: |
              ssh $SSH_USER@$SSH_HOST 'echo"hello"'
 
- workflows:
+workflows:
    version: 2
    build-and-deploy:
      jobs:
